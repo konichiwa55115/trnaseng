@@ -5,7 +5,7 @@ bot = Client(
     "myfirs",
     api_id=17983098,
     api_hash="ee28199396e0925f1f44d945ac174f64",
-    bot_token="5820144966:AAEYUop5E4vQWmxWwBo9wBnx0IiSCJUs2C8"
+    bot_token="6164763193:AAGwXkwq71D36sV-iMH39m7qEJ0mfGvKDM0"
 )
 @bot.on_message(filters.command('start') & filters.private)
 def command1(bot,message):
@@ -28,7 +28,7 @@ def _telegram_file(client, message):
   file_path = message.download(file_name="entry")
 
     # Execute speech.py script with entry file
-  subprocess.call(['python3', 'speech.py', 'RK3ETXWBJQSMO262RXPAIXFSG6NH3QRH', "./downloads/entry" , 'transcription.txt'])
+  subprocess.call(['python3', 'speech.py', '2OVHUDKLF33Z44DOOX7GBAWEL5GOXI3Z', "./downloads/entry" , 'transcription.txt'])
     # Upload transcription file to user
   with open('transcription.txt', 'rb') as f:
         bot.send_document(message.chat.id, f)
@@ -52,7 +52,7 @@ def _telegram_file(client, message):
   file_path = message.download(file_name="entry")
 
     # Execute speech.py script with entry file
-  subprocess.call(['python3', 'speech.py', 'RK3ETXWBJQSMO262RXPAIXFSG6NH3QRH', "./downloads/entry" , 'transcription.txt'])
+  subprocess.call(['python3', 'speech.py', '2OVHUDKLF33Z44DOOX7GBAWEL5GOXI3Z', "./downloads/entry" , 'transcription.txt'])
     # Upload transcription file to user
   with open('transcription.txt', 'rb') as f:
         bot.send_document(message.chat.id, f)
